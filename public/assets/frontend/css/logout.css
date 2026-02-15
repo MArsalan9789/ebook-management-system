@@ -1,0 +1,14 @@
+.logout-small {
+    background: none;
+    border: none;
+    padding: 2px 4px;
+    font-size: 17.5px;
+    color: #797676;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.logout-small:hover {
+    color: #ff4d4d;
+}

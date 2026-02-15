@@ -1,0 +1,127 @@
+/* Reset & basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6C5B7B, #C06C84);
+}
+
+/* Container */
+.container {
+    background: #fff;
+    width: 350px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Form wrapper */
+.form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Input group */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #6C5B7B;
+    box-shadow: 0 0 5px rgba(108,91,123,0.5);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #6C5B7B;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #C06C84;
+}
+
+/* Links */
+p {
+    text-align: center;
+    margin-top: 15px;
+    color: #555;
+}
+
+p a {
+    color: #6C5B7B;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+p a:hover {
+    color: #C06C84;
+}
+
+/* Alerts */
+.alert {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.alert-error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {opacity:0; transform: translateY(-20px);}
+    100% {opacity:1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 25px 20px;
+    }
+}
