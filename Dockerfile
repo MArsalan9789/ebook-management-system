@@ -28,3 +28,7 @@ EXPOSE 10000
 
 # Start Apache in foreground
 CMD ["apache2-foreground"]
+# If using PHP 8.x + Apache or FPM
+RUN apt-get update && apt-get install -y \
+    libpq-dev \
+    && docker-php-ext-install pdo pdo_pgsql pgsql
